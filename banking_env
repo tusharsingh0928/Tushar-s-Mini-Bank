@@ -1,0 +1,8 @@
+# creating conda venv
+conda create --name banking_env python=3.9 
+
+# activating conda venv
+conda activate banking_env
+
+# deactivating conda venv
+conda deactivate
