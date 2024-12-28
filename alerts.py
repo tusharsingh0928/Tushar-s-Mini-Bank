@@ -37,15 +37,3 @@ def check_balance_alert(account):
     elif balance < custom_threshold:
         print(f"Alert: Your balance is below your custom threshold of ₹{custom_threshold:.2f}.")
 
-# def check_all_balances():
-#     accounts = load_accounts()
-#     for account in accounts:
-#         check_balance_alert(account)
-
-# def set_default_alerts():
-#     accounts = load_accounts()
-#     for account in accounts:
-#         account["threshold"] = 100  # Set default threshold
-#         save_to_json(account)
-#         print(f"Default threshold of ₹100 set for account {account['account_number']}.")
-
