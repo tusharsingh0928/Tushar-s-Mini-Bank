@@ -1,6 +1,6 @@
-# Tushar-s-Mini-Bank
+# Tushar's Mini Bank
 
-Welcome to Tushar's Mini Bank, a simplified banking system built using Python and Streamlit. This project allows users to create accounts, perform transactions, view mini-statements, set balance alerts, and generate bank statements.
+Welcome to Tushar's Mini Bank, a simplified console-based banking system built using Python. This project allows users to create accounts, perform transactions, view mini-statements, set balance alerts, and generate bank statements through the command line interface.
 
 ## Table of Contents
 
@@ -37,29 +37,29 @@ Welcome to Tushar's Mini Bank, a simplified banking system built using Python an
 
 ## Usage
 
-1. Run the Streamlit application:
+1. Run the main application script:
     ```bash
-    streamlit run banking_app.py
+    python main.py
     ```
-2. Open your web browser and navigate to the URL provided by Streamlit (usually http://localhost:8501).
+
+2. Follow the on-screen prompts to create accounts, log in, perform transactions, view mini-statements, set alerts, and generate bank statements.
 
 ## Project Structure
 
-├── main.py 
 ├── account_login.py # Account creation and login management 
 ├── transaction.py# Handle deposits, withdrawals, and mini-statements 
 ├── alerts.py# Set balance thresholds and alerts 
 ├── reports.py# Generate bank statements 
-├── banking_app.py # Streamlit GUI for the project 
+├── main.py# Main script to run the console-based application 
 ├── requirements.txt# List of dependencies 
 └── README.md# Project documentation
 
 
 ## Dependencies
 
-- Streamlit==1.41.1
+- Python 3.x
 
-You can install these dependencies using the `requirements.txt` file provided in the project.
+You can install any additional dependencies using the `requirements.txt` file provided in the project.
 
 ## Contributing
 
