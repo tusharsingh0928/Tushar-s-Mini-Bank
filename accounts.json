@@ -1,53 +1,31 @@
 [
     {
-        "first_name": "Gary",
+        "first_name": "Tushar",
         "last_name": "Singh",
-        "email": "gary.singhgmail.com",
-        "phone_number": "1234567890",
+        "email": "tushar123@gmail.com",
+        "phone_number": "1357924680",
         "address": "Judge Nagar, Amritsar",
-        "balance": 2050.0,
-        "account_number": "12345678901",
-        "password": "password123",
-        "created_at": "2023-12-28T12:34:56.789000",
+        "balance": 25400.0,
+        "account_number": "12440028029",
+        "password": "$2b$12$XJbF6xVbkrzSoPHxg4GX6uqbGlPmWE6SGbMMXbzmMMfKBUldclRVa",
+        "created_at": "2024-12-29T13:21:19.235106",
         "transactions": [
             {
-                "timestamp": "2023-12-27T10:00:00.000000",
+                "timestamp": "2024-12-29T13:22:05.906026",
                 "description": "Deposit",
                 "amount": 500.0
             },
             {
-                "timestamp": "2023-12-28T14:30:00.000000",
+                "timestamp": "2024-12-29T13:44:54.191466",
                 "description": "Withdrawal",
-                "amount": -100.0
+                "amount": 100.0
             },
             {
-                "timestamp": "2024-12-29T03:32:28.278951",
-                "description": "Withdrawal",
-                "amount": 900.0
-            },
-            {
-                "timestamp": "2024-12-29T03:34:34.327801",
-                "description": "Withdrawal",
-                "amount": 50.0
-            },
-            {
-                "timestamp": "2024-12-29T03:36:03.750257",
+                "timestamp": "2024-12-29T13:50:06.118900",
                 "description": "Deposit",
-                "amount": 2000.0
+                "amount": 23000.0
             }
         ],
-        "threshold": 50.0
-    },
-    {
-        "first_name": "Tushar",
-        "last_name": "Singh",
-        "email": "tusharsingh@gmail.com",
-        "phone_number": "0987654321",
-        "address": "Judge Nagar, Amritsar",
-        "balance": 20000.0,
-        "account_number": "61795338854",
-        "password": "password246",
-        "created_at": "2024-12-29T03:16:47.082586",
-        "transactions": []
+        "threshold": 10.0
     }
 ]
