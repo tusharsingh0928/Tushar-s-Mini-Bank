@@ -1,10 +1,14 @@
 import json
 from datetime import datetime
 from account_login import login, load_accounts, save_to_json
+import getpass
 
 def perform_transaction():
+    """
+    Handles deposit and withdrawal transactions for a given account.
+    """
     account_number = input("Enter your account number: ")
-    password = input("Enter your password: ")
+    password = getpass.getpass("Enter your password: ")
 
     # Verify login
     if not login(account_number, password):
@@ -20,6 +24,7 @@ def perform_transaction():
         print("Account not found.")
         return
 
+    # Provide options for deposit and withdrawal
     print("\n1. Deposit")
     print("2. Withdrawal")
     choice = input("Choose an option: ")
@@ -55,6 +60,9 @@ def perform_transaction():
     print(f"Remaining Balance: Rs{account['balance']:.2f}")
 
 def view_mini_statement():
+    """
+    Displays the last 5 transactions of the account.
+    """
     account_number = input("Enter your account number: ")
     password = input("Enter your password: ")
 
@@ -82,5 +90,4 @@ def view_mini_statement():
     else:
         print("No transactions found.")
 
-def set_threshold():
-    print("Setting alerts is not yet implemented.")
+
