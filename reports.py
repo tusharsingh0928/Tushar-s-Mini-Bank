@@ -1,10 +1,15 @@
 import json
 from datetime import datetime, timedelta
 from account_login import login, load_accounts
+import getpass
 
 def generate_bank_statement():
+    """
+    Generates and displays a bank statement for the given account number.
+    The statement includes transactions within a specified number of months.
+    """
     account_number = input("Enter your account number: ")
-    password = input("Enter your password: ")
+    password = getpass.getpass("Enter your password: ")
 
     # Verify login
     if not login(account_number, password):
@@ -27,7 +32,10 @@ def generate_bank_statement():
     start_date = current_date - timedelta(days=months * 30)
 
     # Filter transactions based on the number of months
-    filtered_transactions = [transaction for transaction in transactions if datetime.fromisoformat(transaction["timestamp"]) >= start_date]
+    filtered_transactions = [
+        transaction for transaction in transactions 
+        if datetime.fromisoformat(transaction["timestamp"]) >= start_date
+    ]
 
     # Display the bank statement
     if filtered_transactions:
