@@ -14,11 +14,12 @@ Welcome to Tushar's Mini Bank, a simplified console-based banking system built u
 
 ## Features
 
-- **Account Management**: Create an account and log in with credentials.
+- **Account Management**: Create an account and log in with credentials using secure password hashing with bcrypt.
 - **Transactions**: Perform deposits and withdrawals.
 - **Mini-Statements**: View the last 5 transactions.
 - **Alerts**: Set custom balance thresholds and receive alerts.
 - **Bank Statements**: Generate bank statements for a specified period.
+- **Enhanced CLI**: Improved user experience with colored terminal text using colorama.
 
 ## Installation
 
@@ -46,18 +47,21 @@ Welcome to Tushar's Mini Bank, a simplified console-based banking system built u
 
 ## Project Structure
 
-├── account_login.py # Account creation and login management 
-├── transaction.py# Handle deposits, withdrawals, and mini-statements 
-├── alerts.py# Set balance thresholds and alerts 
-├── reports.py# Generate bank statements 
-├── main.py# Main script to run the console-based application 
-├── requirements.txt# List of dependencies 
-└── README.md# Project documentation
+├── account_login.py     # Account creation and login management 
+├── transaction.py       # Handle deposits, withdrawals, and mini-statements 
+├── alerts.py            # Set balance thresholds and alerts 
+├── reports.py           # Generate bank statements 
+├── main.py              # Main script to run the console-based application 
+├── requirements.txt     # List of dependencies 
+└── README.md            # Project documentation
 
 
 ## Dependencies
 
 - Python 3.x
+- bcrypt: For secure password hashing.
+- getpass: For secure password input.
+- colorama: For colored terminal text.
 
 You can install any additional dependencies using the `requirements.txt` file provided in the project.
 
